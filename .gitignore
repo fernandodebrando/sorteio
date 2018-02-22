@@ -1,0 +1,7 @@
+/assets/css/
+/node_modules/
+# IDE
+## Eclipse
+.buildpath
+.project
+.settings
