@@ -302,6 +302,7 @@
 							.appendTo($this)
 							.on('click', function() {
 								location.hash = '';
+					            location.reload();
 							});
 
 					// Prevent clicks from inside article from bubbling.

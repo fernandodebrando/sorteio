@@ -6,7 +6,7 @@ $config = json_decode($json_file);
 if (isset($_POST['remove_position'], $config->participantes[$_POST['remove_position']])) {
     unset($config->participantes[$_POST['remove_position']]);
     $config->participantes = array_values($config->participantes);
-    file_put_contents('config.json', json_encode($config, JSON_PRETTY_PRINT));
+    file_put_contents('config.json', json_encode($config));
 }
 
 $participantes = $config->participantes;
@@ -40,8 +40,7 @@ $randomInt = random_int(0, count($participantes) - 1);
       <nav>
         <ul>
           <li><a href="#lista">Lista</a></li>
-          <li><a href="#sorteio"
-            onclick="setTimeout(function(){location.reload();}, 50);">Sorteio</a></li>
+          <li><a href="#sorteio">Sorteio</a></li>
         </ul>
       </nav>
     </header>
