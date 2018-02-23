@@ -85,3 +85,4 @@ $randomInt = random_int(0, count($participantes) - 1);
   <script src="assets/js/main.js"></script>
 </body>
 </html>
+
