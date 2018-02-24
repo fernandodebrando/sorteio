@@ -1,5 +1,7 @@
 /assets/css/
 /node_modules/
+.env
+/vendor/
 # IDE
 ## Eclipse
 .buildpath
